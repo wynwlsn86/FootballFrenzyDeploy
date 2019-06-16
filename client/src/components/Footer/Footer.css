@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+footer{
+  width: 100%;
+  background-color: grey;
+  color: white;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer-container {
+  min-height: 10vh;
+
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+padding-top: 10px;
+}
