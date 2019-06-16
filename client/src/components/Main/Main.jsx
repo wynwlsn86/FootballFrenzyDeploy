@@ -65,7 +65,7 @@ class Main extends Component {
   fetchUserData = async () => {
     const userData = await fetchAllUsers();
     console.log('userdata', userData)
-    this.setState({
+    await this.setState({
       leagues: userData.leagues,
       teams: userData.teams,
       email: userData.email
