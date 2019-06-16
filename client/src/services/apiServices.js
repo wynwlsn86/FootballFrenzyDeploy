@@ -5,7 +5,8 @@ console.log(process.env.DATABASE_URL)
 
 export const fetchAllUsers = async () => {
   try {
-    const allUsers = await axios.get(`${DATABASE_URL}/leagues/1/team/1/users/1`)
+    // const allUsers = await axios.get(`${DATABASE_URL}/leagues/1/team/1/users/1`)
+    const allUsers = await axios.get(`/leagues/1/team/1/users/1`)
     //change the last 1 to a refrence to the usr passed dow
     return allUsers.data
   }
