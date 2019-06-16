@@ -1,5 +1,7 @@
 import axios from 'axios'
-const DATABASE_URL = `postgres://swlyejybejafoh:30967297f66bc46f00e71a5d0acd8b9ba41ff6d48483dd06e1eff255621359fc@ec2-107-22-238-217.compute-1.amazonaws.com:5432/dfvcbfi26j48i7`
+const DATABASE_URL = process.env.DATABASE_URL
+
+console.log(process.env.DATABASE_URL)
 
 export const fetchAllUsers = async () => {
   try {
