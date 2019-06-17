@@ -1,12 +1,12 @@
 import axios from 'axios'
 const DATABASE_URL = process.env.REACT_APP_DATABASE_URL
 
-console.log(process.env.REACT_APP_DATABASE_URL)
+console.log(DATABASE_URL)
 
 export const fetchAllUsers = async () => {
   try {
     // const allUsers = await axios.get(`${DATABASE_URL}/leagues/1/team/1/users/1`)
-    const allUsers = await axios.get(`/leagues/1/team/1/users/1`)
+    const allUsers = await axios.get(`postgres://swlyejybejafoh:30967297f66bc46f00e71a5d0acd8b9ba41ff6d48483dd06e1eff255621359fc@ec2-107-22-238-217.compute-1.amazonaws.com:5432/dfvcbfi26j48i7?ssl=true/leagues/1/team/1/users/1`)
     //change the last 1 to a refrence to the usr passed dow
     return allUsers.data
   }
