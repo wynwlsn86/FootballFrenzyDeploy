@@ -40,7 +40,6 @@ class WaiverWire extends Component {
         <div className='waiverwire-flex'>
           {
                   this.state.filter === 'name' ?  this.props.allPlayers.filter(player => {
-                    console.log(player.team_id, player.displayName)
                     return player.displayName.toLowerCase().includes(this.state.search.toLowerCase());
                   }).map((player, id) => 
                   <div id='playerCard'>
